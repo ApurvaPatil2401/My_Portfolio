@@ -1,0 +1,260 @@
+:root {
+    --primary-color: #007bff; /* Example: blue */
+    --secondary-color: #6c757d; /* Example: gray */
+    --background-color: #f8f9fa; /* Example: light gray */
+    --text-color: #333; /* Example: dark gray */
+    --accent-color: #28a745; /* Example: green */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #121212;
+        --text-color: #eee;
+        /* ... other dark mode color variables */
+    }
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  header {
+    background-color: #f0e6d2; /* Example background color */
+    padding: 20px;
+  }
+  .hero img {
+    width: 100vw; /* Makes image fit the screen width */
+    height: 5cm; /* Sets the height to exactly 5 cm */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio and fills the area */
+}
+.about {
+    text-align: center; /* Center the text content */
+    padding: 20px; /* Add padding for spacing */
+    /* Add any other styling you want */
+  }
+  
+  .about h2 {
+      text-align: center; /* Ensure the heading is also centered */
+  }
+
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically if needed */
+    background-color: #f0f0f0; /* Add background color if needed */
+    padding: 10px 0; /* Add padding if needed */
+}
+
+.nav-links {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for list items */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Add space between list items */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #333; /* Set link color */
+    padding: 5px 10px; /* Add padding to links */
+}
+
+.nav-links a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+  .hero {
+    text-align: center;
+  }
+  
+  .portfolio {
+    padding: 20px;
+  }
+  
+  .portfolio h2 {
+    text-align: center;
+  }
+  
+  .technical-skills {
+    padding: 20px;
+}
+.technical-skills h2 {
+    text-align: center;
+     /* Center the heading text */
+  }
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    justify-items: center; /* Center items in grid cells */
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.skill:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill i {
+    font-size: 2.5em; /* Adjust icon size */
+    margin-bottom: 10px;
+    color: #007bff; /* Example icon color */
+}
+
+.skill span {
+    font-weight: bold;
+}
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adjust spacing */
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.project {
+    flex: 1;
+    min-width: 300px; /* Ensures proper wrapping on smaller screens */
+    text-align: center;
+}
+
+.project img {
+    width: 100%; 
+    height: auto;
+    max-width: 300px; /* Limits image size */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+.project h3 {
+    margin-bottom: 5px;
+}
+
+.project p {
+    margin-bottom: 10px;
+}
+
+.project a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project {
+        width: 48%; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .project {
+        width: 100%; /* Stack projects on very small screens */
+    }
+}
+
+  .career-research {
+    display: flex;
+    justify-content: space-around; /* Distribute cards evenly */
+    padding: 20px;
+}
+
+.card {
+    width: 45%; /* Adjust width as needed */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience, .research {
+    margin-bottom: 20px;
+}
+
+.experience h3, .research p {
+    margin-bottom: 10px;
+}
+
+.experience ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+ 
+.education {
+    padding: 20px;
+    text-align: center; /* Add this line */
+  }
+  
+  .education h2 {
+    text-align: center;
+  }
+  
+  .degree {
+    margin-bottom: 20px;
+    text-align: center; /* Add this line */
+  }
+  
+  .degree h3,
+  .degree p {
+    text-align: center; /* Add this line */
+  }
+  
+  .contact-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.contact-info {
+    text-align: center;
+    padding: 30px;
+    /* Removed card styling: background-color, border-radius, box-shadow */
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    font-size: 1.5em;
+    margin: 0 15px;
+    color: #333;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
