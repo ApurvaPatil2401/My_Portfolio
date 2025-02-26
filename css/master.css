@@ -27,10 +27,13 @@ body {
   }
   
   .hero img {
-    width: 100vw; /* Makes image fit the screen width */
-    height: 5cm; /* Sets the height to exactly 5 cm */
-    object-fit: cover; /* Ensures the image maintains its aspect ratio and fills the area */
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 5cm; /* Adjust this as needed */
+    object-fit: cover;
 }
+
 .about {
     text-align: center; /* Center the text content */
     padding: 20px; /* Add padding for spacing */
