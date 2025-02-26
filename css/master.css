@@ -25,26 +25,12 @@ body {
     background-color: #f0e6d2; /* Example background color */
     padding: 20px;
   }
-  .hero {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full screen height */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white; /* Adjust text color if needed */
+  
+  .hero img {
+    width: 100vw; /* Makes image fit the screen width */
+    height: 5cm; /* Sets the height to exactly 5 cm */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio and fills the area */
 }
-
-.hero img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire area */
-    z-index: -1; /* Moves the image behind the text */
-}
-
 .about {
     text-align: center; /* Center the text content */
     padding: 20px; /* Add padding for spacing */
