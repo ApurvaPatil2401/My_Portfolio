@@ -1,7 +1,7 @@
 :root {
     --primary-color: #007bff; /* Example: blue */
     --secondary-color: #6c757d; /* Example: gray */
-    --background-color: #f8f9fa; /* Example: light gray */
+    --background-color: hsl(73, 54%, 74%); /* Example: light gray */
     --text-color: #333; /* Example: dark gray */
     --accent-color: #28a745; /* Example: green */
 }
@@ -35,7 +35,7 @@ body {
 }
 
 .about {
-    text-align: center; /* Center the text content */
+    text-align: justify; /* Center the text content */
     padding: 20px; /* Add padding for spacing */
     /* Add any other styling you want */
   }
@@ -126,16 +126,23 @@ body {
     font-weight: bold;
 }
 .projects-container {
+    text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px; /* Adjust spacing */
     flex-wrap: wrap; /* Ensures responsiveness */
 }
 
 .project {
     flex: 1;
-    min-width: 300px; /* Ensures proper wrapping on smaller screens */
+    min-width: 300px;
+    min-height: 450px; /* Ensures proper wrapping on smaller screens */
     text-align: center;
+}
+.project i {
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
 }
 
 .project img {
@@ -152,11 +159,13 @@ body {
 
 .project p {
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .project a {
     color: #007bff;
     text-decoration: none;
+    text-align: center;
 }
 
 .project a:hover {
@@ -167,12 +176,14 @@ body {
 @media (max-width: 768px) {
     .project {
         width: 48%; /* Adjust for smaller screens */
+        text-align: center;
     }
 }
 
 @media (max-width: 480px) {
     .project {
         width: 100%; /* Stack projects on very small screens */
+        text-align: center;
     }
 }
 
