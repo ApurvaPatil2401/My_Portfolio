@@ -1,196 +1,567 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 100 100'><rect width='100' height='100' rx='50' fill='%230058ff'></rect><path fill='%23fff' d='M72.15 21.33L72.15 21.33Q74.49 22.50 74.90 25.02Q75.30 27.54 73.59 29.61L73.59 29.61Q72.42 31.23 70.58 31.41Q68.73 31.59 66.84 30.69L66.84 30.69Q64.68 29.70 62.30 29.16Q59.91 28.62 57.30 28.62L57.30 28.62Q52.44 28.62 48.62 30.15Q44.79 31.68 42.09 34.52Q39.39 37.35 38.00 41.22Q36.60 45.09 36.60 49.77L36.60 49.77Q36.60 55.26 38.18 59.31Q39.75 63.36 42.54 66.06Q45.33 68.76 49.11 70.07Q52.89 71.37 57.30 71.37L57.30 71.37Q59.73 71.37 62.16 70.92Q64.59 70.47 66.84 69.30L66.84 69.30Q68.73 68.40 70.58 68.67Q72.42 68.94 73.68 70.56L73.68 70.56Q75.48 72.81 74.99 75.20Q74.49 77.58 72.24 78.66L72.24 78.66Q69.90 79.83 67.43 80.60Q64.95 81.36 62.43 81.77Q59.91 82.17 57.30 82.17L57.30 82.17Q50.82 82.17 45.02 80.10Q39.21 78.03 34.67 73.98Q30.12 69.93 27.51 63.86Q24.90 57.78 24.90 49.77L24.90 49.77Q24.90 42.84 27.29 36.99Q29.67 31.14 34.04 26.87Q38.40 22.59 44.34 20.21Q50.28 17.82 57.30 17.82L57.30 17.82Q61.26 17.82 65.04 18.72Q68.82 19.62 72.15 21.33Z'></path></svg>" />
     <meta charset="UTF-8">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="-1">
-    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
-    <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="css/master.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Apurva Sadashiv Patil - Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Apurva Sadashiv Patil - Software Developer, AI Specialist, and Data Analyst. Specialized in Python, AI applications, Power BI, and data analysis.">
+    <meta name="keywords"
+        content="Apurva Sadashiv Patil, Software Developer, AI Specialist, Data Analyst, Portfolio, Python, Power BI, MySQL, Machine Learning, Resume">
+    <meta name="author" content="Apurva Sadashiv Patil">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Apurva Sadashiv Patil | Software Developer & AI Specialist">
+    <meta property="og:description"
+        content="Portfolio of Apurva Sadashiv Patil - Passionate about innovation, data, and building intuitive applications.">
+    <meta property="og:image" content="">
+
+    <title>Apurva Sadashiv Patil | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Background Canvas for Floating Anti-Gravity Particles -->
+    <canvas id="particle-canvas"></canvas>
 
-    <header>
-        <div class="navbar">
-            <ul class="nav-links">
-                <li><a href="#technical-skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        <div class="hero">
-            <img src="images/headerimg.jpg" alt="Header Image">
-            
-            <h1>Apurva Sadashiv Patil</h1>
-            <p>Software Developer</p>
-          
-        </div>
-        
-      </header>
-      
-    <section class="about">
-        <h2>About Me</h2>
-        <p>As a passionate software developer and data enthusiast, I am dedicated to innovation and problem-solving. With a strong foundation in programming and data analysis, I enjoy crafting intuitive applications and uncovering insights from complex datasets. I continuously seek opportunities to enhance my technical expertise. Whether it’s designing user-centric applications or analyzing trends in data, I am eager to contribute, learn, and grow while expanding my skills within the tech industry.</p>
-    </section>
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
 
-    <section class="education">
-        <h2>Education</h2>
-        <div class="degree">
-            <h3>Master's in Information Technology(Artificial Intelligence specialization)</h3>
-            <p>KSD's Model college , University of Mumbai</p>
-            <h3>Bachelor's in Information Technology</h3>
-            <p>K.V.Pendharkar college , University of Mumbai</p>
-        </div>
-      </section>
-    
+            <nav class="nav-menu">
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
 
-    <section id="technical-skills" class="technical-skills">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
-            <div class="skill">
-                <i class="fab fa-python"></i>
-                <span>Python</span>
-            </div>
-            <div class="skill">
-                <i class="fas fa-chart-bar"></i> 
-                <span>Power BI</span>
-            </div>
-            <div class="skill">
-                <i class="fas fa-chart-bar"></i> 
-                <span>Data Visualization</span>
-            </div>
-            <div class="skill">
-                <i class="fas fa-chart-bar"></i> 
-                <span>Data Analysis</span>
-            </div>
-            <div class="skill">
-                <i class="fas fa-database"></i>
-                <span>MySQL</span>
-            </div>
-            <div class="skill">
-                <i class="fas fa-code"></i> 
-                <span>C++</span>
-            </div>
-            <div class="skill">
-                <i class="fab fa-html5"></i>
-                <span>HTML5/CSS</span>
-            </div>
-            <div class="skill">
-                <i class="fab fa-github"></i>
-                <span>GitHub</span>
-            </div>
-            <div class="skill">
-                <i class="fas fa-file-excel"></i> 
-                <span>Excel</span>
-            </div>
-            
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </div>
-    </section>
-    
+    </header>
 
-    <section id="project" class="project">
-        <h2>My Projects</h2>
-        <div class="projects-container">
-            <div class="project">
-                <a href="images/Health.jpg" target="_blank">
-                    <img src="images/Health.jpg" alt="Project 1">
-                </a>
-                <h3>Health and Wellness Advisor for Womens</h3>
-                <p>AI-based app that predicts PCOS risk levels and provides personalized wellness recommendations based on user inputs</p>
-                <a href="https://health-advisor-urce.onrender.com/" target="_blank">View Project</a>
-            
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="orbit-bg-container">
+                <!-- Orbital Rings and Planetary Nodes -->
+                <div class="orbit-ring orbit-ring-1">
+                    <div class="orbit-node node-purple"></div>
+                </div>
+                <div class="orbit-ring orbit-ring-2">
+                    <div class="orbit-node node-teal"></div>
+                </div>
+                <div class="orbit-ring orbit-ring-3">
+                    <div class="orbit-node node-coral"></div>
+                </div>
             </div>
-            
-            <div class="project">
-                <a href="images/Enigma_Sound.jpg" target="_blank">
-                    <img src="images/Enigma_Sound.jpg" alt="Project 2">
-                </a>
-                <h3>Enigma Sound: AI Driven Music Generation with Emotional Intelligence</h3>
-                <p>Using Python Flask framework and Flutter</p>
-                <a href="https://github.com/ApurvaPatil2401/Enigma_Sound" target="_blank">View Project</a>
-            </div>
-            <div class="project">
-                <a href="images/dashboard.jpg" target="_blank">
-                    <img src="images/dashboard.jpg" alt="Project 3">
-                </a>
-                <h3>Healthcare Data Dashboard</h3>
-                <p>Analyzed healthcare data to uncover trends in patient demographics, habits, and Disease analysis basing on Alcohol habit and Smoking Habit
+
+            <div class="hero-content container">
+                <div class="hero-badge-container">
+                    <span class="hero-badge">
+                        <span class="badge-dot"></span>
+
+                    </span>
+                </div>
+
+                <h1 class="hero-name">
+                    Apurva Sadashiv Patil</span>
+                </h1>
+
+                <h2 class="hero-title">
+                    Software & AI Developer
+                </h2>
+
+                <p class="hero-bio">
+                    Passionate about innovation, data, and building intuitive applications that bridge the gap between
+                    complex AI systems and user-centric interfaces. Actively Seeking roles in AI and Software
+                    Development.
                 </p>
-                <a href="images/dashboard.jpg" target="_blank">View Dashboard</a>
-            </div>
-            
-            <div class="project">
-                <a href="https://github.com/ApurvaPatil2401" target="_blank">
-                    <i class="fab fa-github" style="font-size: 80px; margin-top: 40px;"></i>
-                    <h3>View More Projects</h3>
-                    <p>Explore additional projects on my GitHub!</p>
-                </a>
-            </div>
-            
-        </div>
-    </section>
-    
-    <section class="career-research">
-        <div class="card">
-            <h2>Career Highlights</h2>
-            <div class="experience">
-                <h3>Data Analyst Intern</h3>
-                <p>EY-GDS (Edunet Foundation)</p>
-                <ul>
-                    <li>Health Care Data Driven Decisions using Power BI: Analyzed healthcare data to uncover trends in patient demographics, habits, and disease patterns using data visualization tools.</li>
-                </ul>
-            </div>
-            <div class="experience">
-                <h3>Present a Research Paper in IEEE Conference </h3>
-                <p>Presented a research on Enigma Sound at the 3rd International Conference on Communication, Control, and Intelligent Systems (CCIS2024), held in Mathura on December 6th-7th, 2024.</p>
-            </div>
-        </div>
-    
-        <div class="card">
-            <h2>Research Work</h2>
-            <ul>
-                <li><div class="research">
-                    <p>Enigma Sound AI- driven Music Generation with Emotional Intelligence(March 2025)</p>
-                    <a href="https://ieeexplore.ieee.org/document/10932090">View paper</a>
-                </div></li>
-                <li><div class="research">
-                    <p>Harnessing Robotics for Oil Spill Mitigation and Ecosystem Restoration (June 2024)</p>
-                    <a href="https://www.jetir.org/papers/JETIR2406471.pdf">View paper</a>
-                </div></li>
-                <li><div class="research">
-                    <p>Electric Vehicles Integrated with Renewable Energy Sources for Sustainable Mobility (December 2023)</p>
-                    <a href="https://www.jetir.org/papers/JETIR2312572.pdf">View paper</a>
-                </div></li>
-            </ul>
-        </div>
-    </section>
-    
-      
 
-    <section id="contact" class="contact-section">
-        <div class="contact-info">
-            <h2>Contact Me</h2>
-            <div class="social-links">
-                <a href="https://github.com/ApurvaPatil2401" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/apurva-patil-1b515928b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:apurvaspatil24@gmail.com"><i class="fas fa-envelope"></i></a> </div>    
+                <div class="hero-cta-container">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
             </div>
-        </div>
-        
-    </section>
 
-    <footer>
-        <p class="copyright-text">© Copyright 2025 Apurva Patil. All rights reserved.</p>
+
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Python -->
+                    <div class="skill-card card-lift">
+                        <div class="skill-icon-wrapper purple-glow">
+                            <!-- Python SVG Icon -->
+                            <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2c5.522 0 10 4.477 10 10s-4.478 10-10 10S2 17.523 2 12 6.478 2 12 2z" />
+                                <path d="M12 6v12M6 12h12" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">Python</h3>
+                        <p class="skill-desc">AI Development, Automation, and Scripting, Flask ,FastAPI framework</p>
+                    </div>
+
+                    <!-- Power BI -->
+                    <div class="skill-card card-lift">
+                        <div class="skill-icon-wrapper teal-glow">
+                            <!-- Power BI Representation -->
+                            <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <path d="M7 17v-4M12 17V9M17 17V7" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">Power BI</h3>
+                        <p class="skill-desc">Interactive Dashboards & Business Intelligence</p>
+                    </div>
+
+                    <!-- Data Visualization -->
+                    <div class="skill-card card-lift">
+                        <div class="skill-icon-wrapper coral-glow">
+                            <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 3v18h18" />
+                                <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">Data Visualization</h3>
+                        <p class="skill-desc">Translating Raw Data into Graphic Insights</p>
+                    </div>
+
+                    <!-- Data Analysis -->
+                    <div class="skill-card card-lift">
+                        <div class="skill-icon-wrapper purple-glow">
+                            <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                <line x1="8" y1="11" x2="14" y2="11" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">Data Analysis</h3>
+                        <p class="skill-desc">Statistical Modeling, EDA & Trend Recognition</p>
+                    </div>
+
+                    <!-- MySQL -->
+                    <div class="skill-card card-lift">
+                        <div class="skill-icon-wrapper teal-glow">
+                            <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                <path d="M3 5v6c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                                <path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">MySQL</h3>
+                        <p class="skill-desc">Database Management & Query Optimization</p>
+                    </div>
+
+                    <!-- RAG -->
+                    <div class="skill-card card-lift">
+                        <div class="skill-icon-wrapper purple-glow">
+                            <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">RAG</h3>
+                        <p class="skill-desc">Retrieval-Augmented Generation ,Local LLMs </p>
+                    </div>
+
+                    <!-- HTML5 / CSS -->
+                    <div class="skill-card card-lift">
+                        <div class="skill-icon-wrapper purple-glow">
+                            <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">HTML5 / CSS</h3>
+                        <p class="skill-desc">Responsive Web Development & UI/UX Styling</p>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="skill-card card-lift">
+                        <div class="skill-icon-wrapper teal-glow">
+                            <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">GitHub</h3>
+                        <p class="skill-desc">Version Control & Collaborative Workflows</p>
+                    </div>
+
+                    <!-- Excel -->
+                    <div class="skill-card card-lift">
+                        <div class="skill-icon-wrapper coral-glow">
+                            <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="8" y1="13" x2="16" y2="13" />
+                                <line x1="8" y1="17" x2="16" y2="17" />
+                                <polyline points="10 9 9 9 8 9" />
+                            </svg>
+                        </div>
+                        <h3 class="skill-name">Excel</h3>
+                        <p class="skill-desc">Advanced Formulas, Pivot Tables & Data Audits</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Master's Degree -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-glow purple-glow"></div>
+                        </div>
+                        <div class="timeline-content card-lift">
+                            <span class="timeline-date">Master's Degree</span>
+                            <h3 class="degree-title">Master of Science in Information Technology</h3>
+                            <h4 class="specialization">AI Specialization</h4>
+                            <p class="institution">KSD's Model College, University of Mumbai</p>
+                            <p class="education-details">Focus on advanced artificial intelligence methods, neural
+                                networks, machine learning algorithms, and research methodologies in IT applications.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Bachelor's Degree -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-glow teal-glow"></div>
+                        </div>
+                        <div class="timeline-content card-lift">
+                            <span class="timeline-date">Bachelor's Degree</span>
+                            <h3 class="degree-title">Bachelor of Science in Information Technology</h3>
+                            <p class="institution">K.V. Pendharkar College, University of Mumbai</p>
+                            <p class="education-details">Foundational coursework in software engineering, database
+                                systems, computer networking, programming paradigms, and mathematics for computer
+                                science.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1: Enigma Sound -->
+                    <div class="project-card card-lift purple-bar">
+                        <div class="project-header">
+                            <span class="project-category">Generative AI</span>
+                            <span class="project-accent-dot purple-bg"></span>
+                        </div>
+                        <h3 class="project-title">Enigma Sound</h3>
+                        <p class="project-desc">
+                            An AI-driven music generation platform designed with emotional intelligence. Translates
+                            dynamic user emotional cues and contextual states into audio compositions, built with a
+                            Flask backend and Flutter mobile client.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Generative AI</span>
+                            <span class="tag">Python Flask</span>
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Music Synthesis</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: RAG Chatbot -->
+                    <div class="project-card card-lift purple-bar">
+                        <div class="project-header">
+                            <span class="project-category">RAG</span>
+                            <span class="project-accent-dot purple-bg"></span>
+                        </div>
+                        <h3 class="project-title">RAG Chatbot</h3>
+                        <p class="project-desc">
+                            A full-stack Retrieval-Augmented Generation (RAG) Agent Chatbot using Python to enable
+                            natural language querying of U.S. executive documents.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">RAG</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">Ollama(Local LLM)</span>
+                            <span class="tag">Prompt Engineering</span>
+                        </div>
+                    </div>
+
+
+                    <!-- Project 3: Health & Wellness Advisor -->
+                    <div class="project-card card-lift teal-bar">
+                        <div class="project-header">
+                            <span class="project-category">AI & Healthcare</span>
+                            <span class="project-accent-dot teal-bg"></span>
+                        </div>
+                        <h3 class="project-title">Health & Wellness Advisor for Women</h3>
+                        <p class="project-desc">
+                            An advanced AI-driven application designed to predict Polycystic Ovary Syndrome (PCOS) risk.
+                            Features highly personalized wellness and lifestyle recommendations powered by custom
+                            machine learning models.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">AI Model</span>
+                            <span class="tag">Healthcare</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Predictive Analysis</span>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Project 4: Healthcare Data Dashboard -->
+                    <div class="project-card card-lift coral-bar">
+                        <div class="project-header">
+                            <span class="project-category">Business Intelligence</span>
+                            <span class="project-accent-dot coral-bg"></span>
+                        </div>
+                        <h3 class="project-title">Healthcare Data Dashboard</h3>
+                        <p class="project-desc">
+                            An interactive Power BI analytics dashboard designed to analyze patient demographic profiles
+                            alongside behavioral habits such as alcohol intake and smoking, supporting medical resource
+                            planning.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Power BI</span>
+                            <span class="tag">Data Analytics</span>
+                            <span class="tag">Demographics</span>
+                            <span class="tag">Behavioral Insights</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Yukti -->
+                    <div class="project-card card-lift teal-bar">
+                        <div class="project-header">
+                            <span class="project-category">AI & Education</span>
+                            <span class="project-accent-dot teal-bg"></span>
+                        </div>
+                        <h3 class="project-title">Yukti</h3>
+                        <p class="project-desc">
+                            The Guarded IDE is an AI-powered coding mentor designed to prioritize conceptual
+                            understanding over instant solutions.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Highlights & Research Publications Section -->
+        <section id="highlights-research" class="section alt-bg">
+            <div class="container dual-grid">
+                <!-- Column 1: Career Highlights -->
+                <div class="highlights-column">
+                    <div class="section-header align-left">
+                        <span class="section-label">Milestones</span>
+                        <h2 class="section-title">Career Highlights</h2>
+                        <div class="section-line"></div>
+                    </div>
+
+                    <div class="highlights-list">
+                        <!-- Highlight 1: Data Analyst Intern -->
+                        <div class="highlight-item card-lift teal-border-hover">
+                            <div class="highlight-icon purple-glow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                                </svg>
+                            </div>
+                            <div class="highlight-details">
+                                <span class="highlight-tag">Internship</span>
+                                <h3 class="highlight-title">Data Analyst Intern</h3>
+                                <p class="highlight-organization">EY-GDS (Edunet Foundation)</p>
+                                <p class="highlight-desc">Conducted hands-on data cleaning, exploratory data analysis,
+                                    and created high-impact visualization dashboards that drove business process
+                                    intelligence.</p>
+                            </div>
+                        </div>
+
+                        <!-- Highlight 2: IEEE Conference Presenter -->
+                        <div class="highlight-item card-lift coral-border-hover">
+                            <div class="highlight-icon teal-glow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                            </div>
+                            <div class="highlight-details">
+                                <span class="highlight-tag">Academic Event</span>
+                                <h3 class="highlight-title">IEEE Conference Presenter</h3>
+                                <p class="highlight-organization">CCIS2024, Mathura • December 2024</p>
+                                <p class="highlight-desc">Presented research papers on emerging tech solutions,
+                                    presenting methodologies and results to international peers and field experts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Research Work -->
+                <div class="research-column">
+                    <div class="section-header align-left">
+                        <span class="section-label">Publications</span>
+                        <h2 class="section-title">Research Work</h2>
+                        <div class="section-line"></div>
+                    </div>
+
+                    <div class="publications-list">
+                        <!-- Paper 1 -->
+                        <div class="paper-card card-lift">
+                            <span class="paper-date">March 2025</span>
+                            <h3 class="paper-title">Enigma Sound: AI-driven Music Generation with Emotional Intelligence
+                            </h3>
+                            <p class="paper-journal">Research paper exploring how machine learning algorithms interpret
+                                emotional vectors to compile customized, real-time auditory atmospheres.</p>
+                            <div class="paper-footer">
+                                <span class="paper-badge purple-badge">Primary Author</span>
+                            </div>
+                        </div>
+
+                        <!-- Paper 2 -->
+                        <div class="paper-card card-lift">
+                            <span class="paper-date">June 2024</span>
+                            <h3 class="paper-title">Harnessing Robotics for Oil Spill Mitigation and Ecosystem
+                                Restoration</h3>
+                            <p class="paper-journal">An investigation into robotic deployments and swarm algorithms to
+                                automate containment and accelerate biodiversity cleanup in marine hazards.</p>
+                            <div class="paper-footer">
+                                <span class="paper-badge teal-badge">Co-Author</span>
+                            </div>
+                        </div>
+
+                        <!-- Paper 3 -->
+                        <div class="paper-card card-lift">
+                            <span class="paper-date">December 2023</span>
+                            <h3 class="paper-title">Electric Vehicles Integrated with Renewable Energy Sources for
+                                Sustainable Mobility</h3>
+                            <p class="paper-journal">System design and simulations of smart grid interactions, exploring
+                                charge management networks backed by renewable wind and solar energy supplies.</p>
+                            <div class="paper-footer">
+                                <span class="paper-badge coral-badge">Primary Author</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Get In Touch</span>
+                    <h2 class="section-title">Connect With Me</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-glow-overlay"></div>
+                    <div class="contact-content">
+                        <h3 class="contact-heading">Let's build something remarkable together.</h3>
+                        <p class="contact-text">
+                            Whether you're looking to collaborate on AI-driven products, business intelligence
+                            dashboards, or custom software developments, my inbox is always open.
+                        </p>
+
+                        <div class="contact-links">
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/apurva-s-patil/" target="_blank"
+                                rel="noopener noreferrer" class="contact-pill btn-linkedin">
+                                <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg>
+                                LinkedIn
+                            </a>
+
+                            <!-- GitHub -->
+                            <a href="https://github.com/ApurvaPatil2401" target="_blank" rel="noopener noreferrer"
+                                class="contact-pill btn-github">
+                                <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                                GitHub
+                            </a>
+
+                            <!-- Email -->
+                            <a href="mailto:apurvaspatil24@gmail.com" class="contact-pill btn-email">
+                                <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                                Email
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="copyright">&copy; 2026 Apurva Sadashiv Patil. All rights reserved.</p>
+
+        </div>
     </footer>
 
-    <!-- Our codes -->
-    <script src="js/main.js"></script>
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 
 </html>
